@@ -22,7 +22,6 @@ public class BfhlResponse {
     private List<String> odd_numbers;
     private List<String> alphabets;
     private List<String> special_characters;
-    private List<String> sepcial_characters; // Included to support potential typo-based tests/evaluators
     private String sum;
     private String concat_string;
 }

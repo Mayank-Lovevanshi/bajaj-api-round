@@ -78,7 +78,6 @@ public class BfhlServiceImpl implements BfhlService {
                 .odd_numbers(oddNumbers)
                 .alphabets(alphabets)
                 .special_characters(specialCharacters)
-                .sepcial_characters(specialCharacters) // Populated to support potential typo-based tests/evaluators
                 .sum(String.valueOf(numericSum))
                 .concat_string(concatString)
                 .build();
