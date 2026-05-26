@@ -93,4 +93,11 @@ class ApiRoundApplicationTests {
 				.andExpect(status().isBadRequest())
 				.andExpect(jsonPath("$.is_success", is(false)));
 	}
+
+	@Test
+	void testHealth() throws Exception {
+		mockMvc.perform(get("/health"))
+				.andExpect(status().isOk())
+				.andExpect(content().string("Server is running ok"));
+	}
 }
